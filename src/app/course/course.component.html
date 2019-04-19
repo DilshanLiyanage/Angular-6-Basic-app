@@ -1,0 +1,6 @@
+<h2>{{ title }}</h2>
+
+<!-- bellow have used angular 6 currency pipe and uppercase followed by | -->
+<ul>
+  <li *ngFor="let course of courses">{{ course | uppercase }} - {{ "55.23" | currency:"USD"}}</li>
+</ul>
