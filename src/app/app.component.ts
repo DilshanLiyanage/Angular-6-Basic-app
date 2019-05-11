@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tharusha Dilshan';
+
+  onClickTest(event) {
+    alert("This came from event binding");
+  }
+
 }

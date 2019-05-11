@@ -7,13 +7,15 @@ import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CourseService } from './course.service';
 import { AuthorComponent } from './author/author.component';
+import { NewTextDirective } from './new-text.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     CourseComponent,
-    AuthorComponent
+    AuthorComponent,
+    NewTextDirective
   ],
   imports: [
     BrowserModule,
