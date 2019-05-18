@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,10 @@ export class AppComponent {
 
   onClickTest(event) {
     alert("This came from event binding");
+  }
+
+  formSubmit(data) {
+    alert("Data : " + data.email + " " + data.name)
   }
 
 }

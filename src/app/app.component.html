@@ -7,3 +7,29 @@
 
 <!-- This click event has been binded -->
 <button (click)="onClickTest($event)">Click On</button>
+<br /><br />
+
+<!-- this is links to routing -->
+<nav>
+    <a routerLink="/student">Student</a>
+    <br /><br />
+    <a routerLink="/employee">Employee</a>
+</nav>
+<br /><br />
+
+<!-- router-outlet is where all routing data loads -->
+<router-outlet></router-outlet>
+
+
+<h1>---------------------------------------------</h1>
+
+<form #myForm="ngForm" (ngSubmit)="formSubmit(myForm.value)">
+    <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Email" ngModel />
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="name" placeholder="Name" ngModel />
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
